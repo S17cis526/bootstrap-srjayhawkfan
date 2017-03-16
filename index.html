@@ -10,7 +10,139 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!--div class="container">
+      <h1>Hello, world!</h1>
+    </div-->
+    <div class="container-fluid">
+        <h1>Hello, world!</h1>
+        <div style="background: gray">
+        <div class="row example">
+            <div class="col col-md-8">.col .col-md-8</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+
+<!-- Columns start at 50% wide on mobile and bump up to 33.3%
+wide on desktop -->
+      <div class="row example">
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+
+<!-- Columns are always 50% wide, on mobile and desktop -->
+          <div class="row example">
+            <div class="col-6">.col-6</div>
+            <div class="col-6">.col-6</div>
+          </div>
+
+        </div>
+        <div class="row">
+        <div class="media">
+          <img class="d-flex mr-3" src="http://placekitten.com/64/64" alt="image">
+          <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel...
+
+            <div class="media mt-3">
+              <a class="d-flex pr-3" href="#">
+                <img src="http://placekitten.com/64/64" alt="image">
+              </a>
+              <div class="media-body">
+                <h5 class="mt-0">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla ...
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <img class="hidden-lg-down" src="http://placekitten.com/1100/50" alt="image">
+      <img class="hidden-md-down" src="http://placekitten.com/900/50" alt="image">
+      <img class="hidden-sm-down" src="http://placekitten.com/700/50" alt="image">
+      <img class="hidden-xs-down" src="http://placekitten.com/500/50" alt="image">
+      <div class="visible-print-block">
+        <h1>Here is some hidden text!</h1>
+      </div>
+    </div>
+      <div class="row">
+        <p>This is a <code>code</code> item</p>
+          <pre><code>This is a longer line of code
+          It even line wraps! Be careful of spacing.</code></pre>
+          <p>There is even a tag for variables like <var>&times</var></p>
+          <p>And for indicating input <kbd>cmds</kbd></p>
+          <p>Sample output: <samp>This is sample output</samp></p>
+
+
+      </div>
+      <div class="row">
+
+        <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this
+        important alert message.
+        </div>
+        <div class="alert alert-info" role="alert">
+        <strong>Heads up!</strong> This alert needs your attention,
+        but it's not super important.
+        </div>
+        <div class="alert alert-warning" role="alert">
+        <strong>Warning!</strong> Better check yourself, you're
+        <a href="#" class="alert-link">not looking too good</a>.
+        </div>
+        <div class="alert alert-danger" role="alert">
+        <strong>Oh snap!</strong> <a href="#" class="alert-link">
+        Change a few things up</a> and try submitting again.
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show"
+        role="alert">
+          <button type="button" class="close" data-dismiss="alert"
+          aria-label="Close">
+            <span aria-hidden="true">&times</span>
+          </button>
+          <strong>Holy guacamole!</strong> You should check in on
+          some of those fields below.
+        </div>
+
+
+      </div>
+      <div class="row">
+        <button id="the_button" type="button" class="btn btn-primary">Primary</button>
+        <button type="button" id="show_modal" class="btn btn-info">Show</button>
+        <button type="button" class="btn btn-danger">Self Destruct</button>
+      </div>
+      <div id="my_modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal"
+              aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save
+              changes</button>
+              <button id="close_modal" type="button" class="btn btn-secondary"
+              data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="message">
+        <input type="hidden" id="message_flash" value="Text Here!">
+        <input type="hidden" id="message_type_flash" value="success">
+      </div>
+
+      <button id="show_message" class="btn btn-primary">Show Message!</button>
+
+    </div>
+
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
